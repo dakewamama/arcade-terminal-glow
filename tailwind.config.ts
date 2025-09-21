@@ -13,12 +13,37 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'mono': ['JetBrains Mono', 'monospace'],
+        'orbitron': ['Orbitron', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        // Terminal Colors
+        terminal: {
+          bg: "hsl(var(--terminal-bg))",
+          surface: "hsl(var(--terminal-surface))",
+          border: "hsl(var(--terminal-border))",
+        },
+        
+        // Neon Colors
+        neon: {
+          cyan: "hsl(var(--neon-cyan))",
+          magenta: "hsl(var(--neon-magenta))",
+          lime: "hsl(var(--neon-lime))",
+          gold: "hsl(var(--neon-gold))",
+        },
+        
+        // Trading Colors
+        profit: "hsl(var(--profit-green))",
+        loss: "hsl(var(--loss-red))",
+        warning: "hsl(var(--warning-amber))",
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -46,16 +71,6 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
         },
       },
       borderRadius: {
