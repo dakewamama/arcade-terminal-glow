@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Search from "./pages/Search";
 import CreateToken from "./pages/CreateToken";
 import Profile from "./pages/Profile";
+import TokenDetails from "./pages/TokenDetails";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/trending" element={<Search />} />
             <Route path="/create" element={<CreateToken />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/token/:mint" element={<TokenDetails />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
